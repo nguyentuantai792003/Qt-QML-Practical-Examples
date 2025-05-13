@@ -69,7 +69,7 @@ QtObject {
 
     function setIconVisibility(name, value)
     {
-        for(var i = 0; i < leftIcons.count; i++)
+        for(var i = 0; i < n; i++)
         {
             if(leftIcon_name === name)
             {
@@ -77,7 +77,7 @@ QtObject {
                 return
             }
         }
-        for(var j = 0; j < rightIcons.count; j++)
+        for(var j = 0; j < n; j++)
         {
             if(rightIcon_name === name)
             {
