@@ -53,14 +53,14 @@ QtObject {
     {
         for(var i = 0; i < leftIcons.count; i++)
         {
-            if(leftIcons.get(i).name === name)
+            if(leftIcon_name === name)
             {
                 return leftIcons.get(i).isvisible
             }
         }
         for(var j = 0; j < rightIcons.count; j++)
         {
-            if(rightIcons.get(j).name === name)
+            if(rightIcon_name === name)
             {
                 return rightIcons.get(j).isvisible
             }
@@ -71,7 +71,7 @@ QtObject {
     {
         for(var i = 0; i < leftIcons.count; i++)
         {
-            if(leftIcons.get(i).name === name)
+            if(leftIcon_name === name)
             {
                 leftIcons.setProperty(i, "isvisible", value)
                 return
@@ -79,7 +79,7 @@ QtObject {
         }
         for(var j = 0; j < rightIcons.count; j++)
         {
-            if(rightIcons.get(j).name === name)
+            if(rightIcon_name === name)
             {
                 rightIcons.setProperty(j, "isvisible", value)
                 return
