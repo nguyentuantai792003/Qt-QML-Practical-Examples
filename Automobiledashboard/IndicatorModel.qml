@@ -58,13 +58,6 @@ QtObject {
                 return leftIcons.get(i).isvisible
             }
         }
-        for(var j = 0; j < rightIcons.count; j++)
-        {
-            if(rightIcon_name === name)
-            {
-                return rightIcons.get(j).isvisible
-            }
-        }
     }
 
     function setIconVisibility(name, value)
@@ -74,14 +67,6 @@ QtObject {
             if(leftIcon_name === name)
             {
                 leftIcons.setProperty(i, "isvisible", value)
-                return
-            }
-        }
-        for(var j = 0; j < n; j++)
-        {
-            if(rightIcon_name === name)
-            {
-                rightIcons.setProperty(j, "isvisible", value)
                 return
             }
         }
